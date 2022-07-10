@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .input-style {
+       @apply w-full p-4 rounded-3xl placeholder-black dark:placeholder-white dark:text-white focus:outline-none border-2 border-zinc-600 bg-inherit
+    }
+    .main-container {
+        @apply bg-grad bg-gradient bg-cover dark:backdrop-blur dark:bg-black/40 box-border
+    }
+    .second-container {
+        @apply dark:backdrop-blur-xl dark:bg-black/40 bg-cover
+    }
+    .notes-title {
+        @apply font-bold text-4xl mb-7 dark:text-white dark:text-white
+    }
+    .upload-btn {
+        @apply flex mt-6 border-2 border-zinc-600 p-3 rounded-3xl w-full sm:w-52 justify-between
+    }
+    .dark-mode-btn {
+        @apply inline-flex relative items-center cursor-pointer
+    }
+    .input-title {
+        @apply flex justify-center text-lg my-3 dark:text-white
+    }
+}
